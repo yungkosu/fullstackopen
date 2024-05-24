@@ -3,12 +3,10 @@ sequenceDiagram;
 participant browser
 participant server
 
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
-    server-->>browser: 302 Redirect => GET https://studies.cs.helsinki.fi/exampleapp/notes
+    server-->>browser: the HTML document
     deactivate server
-
-    Note right of browser: The server responds with a 302 status which is a redirect and the server asks the browser to perform a GET to retrieve the JSON doc with the notes. Browser reloads the notes page.
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
