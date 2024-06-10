@@ -83,6 +83,22 @@ const courses = [
             id: 2
           }
         ]
+      },
+      {
+        name: 'Test',
+        id: 3,
+        parts: [
+          {
+            name: 'lalal',
+            exercises: 100,
+            id: 1
+          },
+          {
+            name: 'tataa',
+            exercises: 10,
+            id: 2
+          }
+        ]
       }
     ]
   
