@@ -28,6 +28,7 @@ const App = () => {
     setSelected(random)
   }
 
+
 const vote = () => {
 copy[selected] += 1
 setVotes(copy)
